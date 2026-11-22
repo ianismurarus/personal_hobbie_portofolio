@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('guitar-portfolio-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+
+            const savedLang = localStorage.getItem('guitar-portfolio-lang') || 'en';
+            document.documentElement.setAttribute('data-lang', savedLang);
+            document.documentElement.setAttribute('lang', savedLang);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="stilizare.css">
+    <title>Practical Exercises - Ianis Muraruș</title>
+</head>
+<body data-page="practice">
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <span class="brand-dot"></span>
+                <span>Ianis Murarus</span>
+            </a>
+
+            <div class="nav-actions">
+                <nav class="nav-links" id="navLinks">
+                    <a href="index.html#Abilitati" data-i18n="nav.skills">Skills</a>
+                    <a href="https://www.instagram.com/ianissss.7?igsh=MWFjeXhkZzBvejBzMw==" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.youtube.com/@ianismurarus7893" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="mailto:ianioxy@outlook.com" class="nav-cta">
+                        <i class="fa-solid fa-at"></i>
+                        <span data-i18n="nav.email">E-mail</span>
+                    </a>
+                </nav>
+
+                <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language EN/RO" title="Switch language EN / RO">
+                    <span class="lang-opt" data-lang-opt="en">EN</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-opt" data-lang-opt="ro">RO</span>
+                </button>
+
+                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle Light/Dark theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+
+                <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="skill-page reveal">
+            <a href="index.html#Abilitati" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span data-i18n="sub.back">Back to Skills</span>
+            </a>
+
+            <div class="skill-hero-banner">
+                <span class="section-eyebrow" data-i18n="practice.eyebrow">MODULE 03 // TECHNIQUE &amp; PRECISION</span>
+                <h1 data-i18n="practice.title">🎧 Practical Exercises</h1>
+            </div>
+
+            <div class="skill-article">
+                <h2 data-i18n="practice.h2">About Practical Exercises</h2>
+                <p data-i18n="practice.p1">
+                    “Practice makes perfect” — an adage that rings truer than ever when studying the guitar. Structured
+                    exercises are the backbone of developing solid technique and clean execution. I have dedicated
+                    thousands of hours to focused drills that turned raw passion into reliable skill.
+                </p>
+                <p data-i18n="practice.p2">
+                    Each exercise is designed to target a specific aspect of playing: dexterity, speed, accuracy, and
+                    endurance. Through deliberate, concentrated repetition, I've built a foundation that allows me to
+                    tackle complex pieces with confidence and ease.
+                </p>
+                <p data-i18n="practice.p3">
+                    It isn't just about playing fast or pulling off flashy runs — it's about building muscle memory,
+                    musical reflexes, and an intuitive connection with the instrument. The result is an authentic,
+                    expressive performance that flows naturally.
+                </p>
+            </div>
+
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/yfh63PWLhuU"
+                        title="Practical Exercises - Demonstration"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="skill-article">
+                <h2 data-i18n="practice.list.h2">Key Drills &amp; Focus Areas</h2>
+                <ul class="checklist-grid">
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="practice.li1">Scales and arpeggios</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="practice.li2">Speed and precision drills</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="practice.li3">Building hand stamina and endurance</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="practice.li4">Advanced picking techniques</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span data-i18n="practice.li5">Improvisation and fretboard adaptability</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-nav-footer">
+                <a href="teorie-muzicala.html" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> <span data-i18n="practice.prev">Previous: Music Theory</span></a>
+                <a href="performanta-live.html" class="btn btn-primary"><span data-i18n="practice.next">Next: Live Performance</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="currentYear"></span> Ianis Muraruș &bull; <span data-i18n="footer.copy">Built with passion for Electric Guitar &amp; Code.</span></p>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="footer.home">Home</a>
+                <a href="acorduri-ritm.html" data-i18n="footer.chords">Chords</a>
+                <a href="teorie-muzicala.html" data-i18n="footer.theory">Theory</a>
+                <a href="performanta-live.html" data-i18n="footer.live">Live</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
